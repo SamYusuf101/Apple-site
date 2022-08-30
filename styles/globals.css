@@ -6,4 +6,7 @@
   .headerLink {
     @apply cursor-pointer rounded-full p-2 opacity-75 transition hover:bg-red-500;
   }
+  .headerIcon {
+    @apply h-6 w-6 cursor-pointer space-x-8 opacity-75 transition hover:opacity-100;
+  }
 }

@@ -30,13 +30,29 @@ function Header() {
         <a className="headerLink">Support</a>
         <a className="headerLink">Business</a>
       </div>
-      <div>
-        <SearchIcon />
-        <ShoppingBagIcon />
-        <UserIcon />
+      <div className="flex items-center justify-center gap-x-4 pr-1 md:w-1/5">
+        <SearchIcon className="headerIcon" />
+
+        <div className="relative cursor-pointer ">
+          <span
+            className="absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center 
+          justify-center rounded-full bg-gradient-to-r from-blue-500 to-green-500"
+          >
+            5
+          </span>
+          <ShoppingBagIcon className="headerIcon" />
+        </div>
       </div>
     </header>
   );
+  /*
+  <span
+              className="absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center 
+          justify-center rounded-full bg-gradient-to-r from-blue-500 to-green-500"
+            >
+              5
+            </span>
+            */
 }
 
 export default Header;
