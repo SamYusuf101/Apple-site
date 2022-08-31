@@ -11,7 +11,10 @@ function Header() {
   const session = false;
 
   return (
-    <header className="sticky z-30 flex w-full items-center justify-between bg-[#a8c8d4] pl-1 pt-2 pb-1">
+    <header
+      className="sticky top-0 z-30 flex w-full items-center justify-between
+     bg-[#c1d4db] pl-1 pt-2 pb-1"
+    >
       <div className="flex items-center justify-center md:w-1/5">
         <Link href="/">
           <div
