@@ -8,6 +8,8 @@ import {
 } from "@heroicons/react/outline";
 
 function Header() {
+  const session = false;
+
   return (
     <header className="sticky z-30 flex w-full items-center justify-between bg-[#E7ECEE] pl-1 pt-2 pb-1">
       <div className="flex items-center justify-center md:w-1/5">
@@ -32,16 +34,32 @@ function Header() {
       </div>
       <div className="flex items-center justify-center gap-x-4 pr-1 md:w-1/5">
         <SearchIcon className="headerIcon" />
+        <Link href="/">
+          <div className="relative cursor-pointer ">
+            <span
+              className="absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center 
+          justify-center rounded-full bg-gradient-to-r from-blue-500 to-green-500 text-[10px] text-white"
+            >
+              5
+            </span>
+            <ShoppingBagIcon className="headerIcon" />
+          </div>
+        </Link>
 
-        <div className="relative cursor-pointer ">
-          <span
-            className="absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center 
-          justify-center rounded-full bg-gradient-to-r from-blue-500 to-green-500"
-          >
-            5
-          </span>
-          <ShoppingBagIcon className="headerIcon" />
-        </div>
+        {session ? (
+          <Image
+            src={"https://"}
+            alt=""
+            className="cursor-pointer rounded-full"
+            width={34}
+            height={34}
+          />
+        ) : (
+          <UserIcon
+            className="headerIcon"
+            //onClick={() => signIn()}
+          />
+        )}
       </div>
     </header>
   );
