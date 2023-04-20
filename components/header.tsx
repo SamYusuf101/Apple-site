@@ -40,7 +40,7 @@ function Header() {
         <Link href="/">
           <div className="relative cursor-pointer ">
             <span
-              className="absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center 
+              className="absolute -right-1 -top-1 z-40 flex h-4 w-4 items-center 
           justify-center rounded-full bg-gradient-to-r from-blue-500 to-green-500 text-[10px] text-white"
             >
               5
